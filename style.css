@@ -63,16 +63,16 @@ main {
         width: 100%;
     }
     .stepbox {
-        margin: 20px 5% 20px 5%;
+        margin: 20px auto;
         width: 90%;
         float: none;
     }
 
     .stepbox:first-child {
-        margin: 50px 5% 20px 5%;
+        margin: 0 5% 20px 5%;
     }
 
     .stepbox:last-child {
-        margin: 20px 5% 50px 5%;
+        margin: 20px 5% 0 5%;
     }
 }
