@@ -13,8 +13,6 @@
 main {
     margin: 50px auto;
     width: 960px;
-    /* height: 1000px; */
-    /* background-color: red; */
 }
 
 .image-1 {
@@ -47,56 +45,34 @@ main {
     padding: 5px;
 }
 
-.step1box {
+.stepbox {
     width: 300px;
     margin-right: 30px;
     padding: 10px;
     float: left;
-    /* background-color: salmon; */
     border: solid 2px #f7f7f7;
     position: relative;
 }
 
-
-.step2box {
-    width: 300px;
-    margin-right: 30px;
-    padding: 10px;
-    float: left;
-    /* background-color: brown; */
-    border: solid 2px #f7f7f7;
-    position: relative;
-}
-
-.step3box {
-    width: 300px;
-    float: left;
-    padding: 10px;
-    /* background-color: darkgray; */
-    border: solid 2px #f7f7f7;
-    position: relative;
+.stepbox:last-child {
+    margin-right: 0;
 }
 
 @media screen and (max-width:768px){
     main {
         width: 100%;
     }
-    .step1box {
-        margin: 50px 5% 20px 5%;
-        width: 90%;
-        float: none;
-        margin: 0 auto;
-    }
-
-    .step2box {
-        margin: 50px 5% 20px 5%;
+    .stepbox {
+        margin: 20px 5% 20px 5%;
         width: 90%;
         float: none;
     }
 
-    .step3box {
+    .stepbox:first-child {
+        margin: 50px 5% 20px 5%;
+    }
+
+    .stepbox:last-child {
         margin: 20px 5% 50px 5%;
-        width: 90%;
-        float: none;
     }
 }
